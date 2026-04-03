@@ -91,9 +91,9 @@ st.markdown("""
 # -------------------- LOAD MODELS --------------------
 @st.cache_resource
 def load_models():
-cnn = tf.keras.models.load_model("cnn_model.h5", compile=False)
-resnet = tf.keras.models.load_model("ResNet50.h5", compile=False)
-mobilenet = tf.keras.models.load_model("mobilenetv2.h5", compile=False)
+cnn = tf.keras.models.load_model("cnn_model.h5")
+resnet = tf.keras.models.load_model("ResNet50.h5")
+mobilenet = tf.keras.models.load_model("mobilenetv2.h5")
     return cnn, resnet, mobilenet
 
 cnn_model, resnet_model, mobilenet_model = load_models()
