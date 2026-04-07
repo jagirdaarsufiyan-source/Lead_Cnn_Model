@@ -5,7 +5,7 @@ from PIL import Image
 
 # -------------------- PAGE CONFIG --------------------
 st.set_page_config(
-    page_title="Leaf Deficiency Detection",
+    page_title="Leaf deficiency Detection",
     page_icon="🌿",
     layout="centered"
 )
